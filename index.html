@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="特定技能 ミャンマー人向け 年末調整（令和8年分）ガイド。မိသားစု ထည့်လို့ရလား စစ်ရန်၊ လိုတဲ့ စာရွက်စာတမ်း၊ ဝင်ငွေ တွက်စက်၊ ဖောင်ဖြည့်နည်း။">
+<meta name="theme-color" content="#0E6B5A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="年末調整 ၂၀၂၆ လမ်းညွှန် | ST AGENCY JAPAN">
+<meta property="og:description" content="မိသားစု ထည့်လို့ရလား စစ်မယ်・လိုတဲ့ စာရွက်・ဝင်ငွေ တွက်စက်・ဖောင်ဖြည့်နည်း">
+<meta property="og:image" content="ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<title>年末調整 ၂၀၂၆ လမ်းညွှန် | ST AGENCY JAPAN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+Myanmar:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F6F5; --surface:#FFFFFF; --ink:#15232B; --muted:#52626B;
+  --jade:#0E6B5A; --jade-ink:#FFFFFF; --marigold:#E9A21B; --marigold-soft:#FFF4DC;
+  --ok:#1D7A46; --ok-soft:#E3F4EA; --ng:#B3261E; --ng-soft:#FDE7E5; --line:#D5DEDB;
+  color-scheme:light; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1719; --surface:#172226; --ink:#E8EEEC; --muted:#9AABA8;
+    --jade:#1E8A73; --jade-ink:#FFFFFF; --marigold:#F2B84B; --marigold-soft:#2E2614;
+    --ok:#5CC98A; --ok-soft:#15301F; --ng:#FF8A80; --ng-soft:#3A1A18; --line:#2A3A3E;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1719; --surface:#172226; --ink:#E8EEEC; --muted:#9AABA8;
+  --jade:#1E8A73; --jade-ink:#FFFFFF; --marigold:#F2B84B; --marigold-soft:#2E2614;
+  --ok:#5CC98A; --ok-soft:#15301F; --ng:#FF8A80; --ng-soft:#3A1A18; --line:#2A3A3E;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px); scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Noto Sans Myanmar","Myanmar Text","Padauk","Noto Sans JP","Hiragino Sans",sans-serif;
+  font-size:17px; line-height:1.9}
+.jp{font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif}
+.wrap{max-width:780px; margin:0 auto; padding:0 20px}
+a{color:var(--jade)}
+.hero{background:var(--jade); color:var(--jade-ink); padding:40px 0 30px}
+.hero a{color:var(--jade-ink)}
+.org{font-size:14px; opacity:.85; margin:0 0 10px}
+.hero h1{font-size:clamp(28px,7vw,44px); line-height:1.35; margin:0 0 6px; font-weight:800}
+.hero h1 .jp{display:block; font-size:.55em; font-weight:700; opacity:.9; margin-bottom:4px}
+.hero p.lead{margin:12px 0 20px}
+.steps{list-style:none; margin:0; padding:0; display:grid; gap:10px; counter-reset:t}
+.steps li{counter-increment:t; display:flex; gap:14px; align-items:flex-start; background:rgba(255,255,255,.12); border-radius:12px; padding:12px 14px; line-height:1.7}
+.steps li::before{content:counter(t); flex:0 0 32px; height:32px; border-radius:50%; background:var(--marigold); color:#15232B; font-weight:800; display:grid; place-items:center}
+.steps small{display:block; opacity:.85; font-size:14px}
+.toc{display:flex; flex-wrap:wrap; gap:8px; margin:22px 0 0; padding:0; list-style:none}
+.toc a{display:block; text-decoration:none; border:1px solid rgba(255,255,255,.5); border-radius:999px; padding:2px 14px; font-size:15px}
+.toc a:hover{background:rgba(255,255,255,.15)}
+section{padding:38px 0 6px}
+h2{font-size:23px; line-height:1.5; margin:0 0 12px; font-weight:800}
+h3{font-size:18px; margin:24px 0 6px}
+p{margin:0 0 12px}
+ul.plain{margin:0 0 12px; padding-left:1.2em}
+ul.plain li{margin-bottom:6px}
+.note{color:var(--muted); font-size:15px}
+.panel{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:18px 18px 8px; margin:12px 0}
+.timeline{margin:8px 0 0 8px; padding:0; list-style:none; border-left:3px solid var(--jade)}
+.timeline li{position:relative; padding:0 0 16px 20px}
+.timeline li::before{content:""; position:absolute; left:-9px; top:9px; width:15px; height:15px; border-radius:50%; background:var(--surface); border:3px solid var(--jade)}
+.timeline b{display:block}
+.changes{list-style:none; margin:0; padding:0; display:grid; gap:10px}
+.changes li{background:var(--surface); border:1px solid var(--line); border-left:5px solid var(--marigold); border-radius:10px; padding:10px 14px; line-height:1.7}
+.changes b{display:block}
+
+.tool{background:var(--marigold-soft); border:2px solid var(--marigold); border-radius:18px; padding:20px; margin:18px 0}
+.tool h3{margin-top:0; font-size:20px}
+.field{margin:0 0 14px}
+.field label,.field .lbl{display:block; font-weight:600; margin-bottom:2px}
+.field .hint{display:block; font-size:14px; color:var(--muted); margin-bottom:6px; line-height:1.6}
+.field input[type=date],.field input[type=number],.field select{width:100%; font:inherit; font-size:17px; padding:10px 12px; border-radius:10px; border:1px solid var(--line); background:var(--surface); color:var(--ink)}
+.opts{display:grid; gap:8px}
+.opts label{display:flex; align-items:flex-start; gap:10px; background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:8px 12px; font-weight:400; cursor:pointer; line-height:1.6}
+.opts input{margin-top:6px; width:18px; height:18px; flex:0 0 18px; accent-color:var(--jade)}
+.opts.row{display:flex; flex-wrap:wrap}
+.btn{font:inherit; font-weight:700; font-size:17px; padding:12px 18px; border-radius:12px; border:0; background:var(--jade); color:var(--jade-ink); cursor:pointer; width:100%}
+:focus-visible{outline:3px solid var(--marigold); outline-offset:2px}
+.result{margin-top:14px; border-radius:12px; padding:14px 16px; display:none}
+.result.show{display:block}
+.result.ok{background:var(--ok-soft); border:1px solid var(--ok)}
+.result.ng{background:var(--ng-soft); border:1px solid var(--ng)}
+.result .head{font-size:19px; font-weight:800; margin-bottom:4px}
+.result ul{margin:6px 0 0; padding-left:1.2em}
+.doclist{list-style:none; margin:14px 0 0; padding:0; display:grid; gap:8px}
+.doclist li{background:var(--surface); border:1px solid var(--line); border-left:5px solid var(--jade); border-radius:10px; padding:10px 14px; line-height:1.65}
+.doclist li.opt{border-left-color:var(--marigold)}
+.doclist .nm{font-family:"Noto Sans JP",sans-serif; font-weight:700; display:block}
+.doclist .from{display:block; font-size:14px; color:var(--muted)}
+.calcout{margin-top:14px; background:var(--surface); border:1px solid var(--line); border-radius:12px; overflow:hidden}
+.calcout div{display:flex; justify-content:space-between; gap:12px; padding:10px 14px; border-top:1px solid var(--line); align-items:baseline}
+.calcout div:first-child{border-top:0}
+.calcout .k{line-height:1.5}
+.calcout .k small{display:block; color:var(--muted); font-size:13px}
+.calcout .v{font-family:"Noto Sans JP",sans-serif; font-weight:700; font-size:20px; white-space:nowrap; font-variant-numeric:tabular-nums}
+.calcout .hl{background:var(--ok-soft)}
+.badge{display:inline-grid; place-items:center; width:22px; height:22px; border-radius:50%; background:var(--marigold); color:#15232B; font-size:12px; font-weight:800; font-family:"Noto Sans JP",sans-serif; vertical-align:2px; margin-right:4px}
+
+/* real form figures */
+.formfig{margin:10px 0 26px}
+.who{display:inline-block; font-size:14px; background:var(--marigold-soft); border:1px solid var(--marigold); border-radius:6px; padding:0 8px; margin-left:6px; vertical-align:2px}
+.swipe{font-size:13px; color:var(--muted); margin:0 0 6px}
+.scroller{overflow-x:auto; background:#fff; border:1px solid var(--line); border-radius:14px; -webkit-overflow-scrolling:touch}
+.canvas{position:relative; min-width:880px}
+.canvas img{display:block; width:100%; height:auto}
+.pin{position:absolute; transform:translate(-50%,-50%); width:30px; height:30px; border-radius:50%; border:2px solid #fff; background:var(--marigold); color:#15232B; font:800 13px/1 "Noto Sans JP",sans-serif; padding:0; cursor:pointer; box-shadow:0 1px 4px rgba(0,0,0,.35); display:grid; place-items:center}
+.pin.on{background:#B3261E; color:#fff; transform:translate(-50%,-50%) scale(1.15)}
+.caption{margin:10px 0 0; background:var(--surface); border:1px solid var(--line); border-left:5px solid var(--marigold); border-radius:10px; padding:10px 14px; line-height:1.7; min-height:3.4em}
+.caption .badge{width:26px; height:26px; font-size:13px}
+ol.callouts{list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px}
+ol.callouts li{display:flex; gap:12px; align-items:flex-start; line-height:1.7; border-radius:8px; padding:4px 6px; cursor:pointer}
+ol.callouts li.on{background:var(--marigold-soft)}
+ol.callouts li .badge{flex:0 0 26px; width:26px; height:26px; font-size:13px; margin-top:3px}
+details.more{background:var(--surface); border:1px solid var(--line); border-radius:14px; margin:12px 0}
+details.more summary{cursor:pointer; padding:12px 16px; font-weight:600}
+details.more .body{padding:0 12px 12px}
+details.more img{display:block; width:100%; height:auto; border-radius:8px; background:#fff}
+
+.bands{display:grid; gap:10px; margin:12px 0}
+.band{border-radius:12px; padding:12px 16px; border:1px solid var(--line); background:var(--surface); display:grid; grid-template-columns:auto 1fr; gap:4px 14px; align-items:center}
+.band .mark{grid-row:span 2; font-size:26px; line-height:1}
+.band b{font-size:18px}
+.band span{font-size:15px; color:var(--muted)}
+.band.ok{border-left:6px solid var(--ok)} .band.warn{border-left:6px solid var(--marigold)} .band.ng{border-left:6px solid var(--ng)}
+.rules{counter-reset:r; list-style:none; padding:0; margin:12px 0}
+.rules li{counter-increment:r; position:relative; padding:0 0 12px 40px}
+.rules li::before{content:counter(r); position:absolute; left:0; top:2px; width:28px; height:28px; border-radius:8px; background:var(--jade); color:var(--jade-ink); display:grid; place-items:center; font-weight:800; font-size:15px}
+.yesno{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+.yesno div{border-radius:12px; padding:12px 14px; font-size:15px; line-height:1.7}
+.yesno .y{background:var(--ok-soft); border:1px solid var(--ok)} .yesno .n{background:var(--ng-soft); border:1px solid var(--ng)}
+.yesno b{display:block; font-size:16px; margin-bottom:4px}
+@media (max-width:520px){.yesno{grid-template-columns:1fr}}
+.era{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+.era input{width:9em; font:inherit; font-size:17px; padding:8px 10px; border-radius:10px; border:1px solid var(--line); background:var(--surface); color:var(--ink)}
+.era output{font-family:"Noto Sans JP",sans-serif; font-weight:700; font-size:20px}
+.contact{background:var(--jade); color:var(--jade-ink); border-radius:16px; padding:18px 20px; margin:30px 0 0}
+.contact h2{margin-bottom:4px}
+footer{margin-top:30px; padding:24px 0 40px; border-top:1px solid var(--line); font-size:14px; color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.result.show{animation:pop .25s ease-out} @keyframes pop{from{transform:translateY(4px);opacity:0}to{transform:none;opacity:1}}}
+
+.quick{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+@media (max-width:640px){.quick{grid-template-columns:1fr}}
+.qbtn{display:flex; align-items:center; gap:12px; text-decoration:none; color:#15232B; background:#fff; border-radius:14px; padding:12px 14px; box-shadow:0 2px 0 rgba(0,0,0,.15); line-height:1.5}
+.hero .qbtn{color:#15232B}
+.qbtn:hover{background:#FFF4DC}
+.qn{flex:0 0 30px; height:30px; border-radius:50%; background:var(--marigold); color:#15232B; display:grid; place-items:center; font-weight:800}
+.qi{font-size:26px}
+.qt{font-weight:800; font-size:17px}
+.qt small{display:block; font-weight:400; font-size:13px; color:#52626B}
+.summary{background:var(--surface); border:2px solid var(--jade); border-radius:16px; padding:16px 18px 8px}
+.summary h2{font-size:20px}
+.summary ul{margin:0 0 8px; padding-left:1.2em}
+.summary li{margin-bottom:8px}
+.step{display:inline-block; background:var(--jade); color:var(--jade-ink); border-radius:999px; font-size:14px; padding:0 12px; margin-right:8px; vertical-align:3px}
+.lead2{font-weight:600; background:var(--marigold-soft); border-radius:10px; padding:8px 12px}
+.nextbtn,.jumpbtn{display:block; text-align:center; text-decoration:none; font-weight:700; border-radius:12px; padding:12px 16px; margin:18px 0 0}
+.nextbtn{background:var(--jade); color:var(--jade-ink)}
+.jumpbtn{background:var(--surface); color:var(--jade); border:2px solid var(--jade); margin-top:14px}
+.sidenav{position:fixed; right:calc(8px + env(safe-area-inset-right,0px)); top:50%; transform:translateY(-50%); z-index:30; display:flex; flex-direction:column; gap:4px; background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:6px; box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.sidenav a{display:flex; flex-direction:column; align-items:center; gap:0; width:62px; padding:6px 2px; border-radius:12px; text-decoration:none; color:var(--ink); line-height:1.3}
+.sidenav a:hover{background:var(--marigold-soft)}
+.sidenav a.active{background:var(--jade); color:var(--jade-ink)}
+.ni{font-size:20px; line-height:1.2}
+.nl{font-size:11px; font-weight:600}
+@media (max-width:980px){
+  .wrap{padding-right:76px}
+}
+@media (max-width:640px){
+  .wrap{padding-left:14px; padding-right:62px}
+  .sidenav{right:calc(4px + env(safe-area-inset-right,0px)); padding:4px; gap:2px}
+  .sidenav a{width:50px; padding:5px 0}
+  .ni{font-size:18px}
+  .nl{font-size:10px}
+}
+.inlinejump{display:inline-block; background:var(--jade); color:var(--jade-ink)!important; border-radius:999px; padding:0 10px; text-decoration:none; font-weight:700; white-space:nowrap}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="org">ST AGENCY JAPAN ・ 特定技能 ထောက်ပံ့ရေး</p>
+    <h1><span class="jp">令和8年分 年末調整</span>၂၀၂၆ ခုနှစ် နှစ်ကုန်အခွန်ချိန်ညှိခြင်း လမ်းညွှန်</h1>
+    <p class="lead">အောက်က ခလုတ် ၄ ခုကို အစဉ်လိုက် နှိပ်ပြီး လုပ်သွားရုံပါပဲ။</p>
+    <div class="quick">
+      <a class="qbtn" href="#family"><span class="qn">၁</span><span class="qi">👨‍👩‍👧</span><span class="qt">မိသားစု ထည့်လို့ရလား<small>မွေးနေ့နဲ့ ငွေလွှဲပမာဏ ထည့်ပြီး စစ်မယ်</small></span></a>
+      <a class="qbtn" href="#docs"><span class="qn">၂</span><span class="qi">📄</span><span class="qt">လိုတဲ့ စာရွက်စာတမ်း<small>✓ ပေးရုံနဲ့ ကိုယ့်စာရင်း ထွက်လာမယ်</small></span></a>
+      <a class="qbtn" href="#calc"><span class="qn">၃</span><span class="qi">🧮</span><span class="qt">ဝင်ငွေ တွက်စက်<small>ဖောင်မှာ ရေးရမယ့် ပမာဏ တွက်မယ်</small></span></a>
+      <a class="qbtn" href="#forms"><span class="qn">၄</span><span class="qi">✍️</span><span class="qt">ဖောင် ဖြည့်နည်း<small>တရားဝင်ဖောင်ပေါ်မှာ နံပါတ်နှိပ်ပြီး ကြည့်မယ်</small></span></a>
+    </div>
+  </div>
+</header>
+
+<nav class="sidenav" aria-label="အမြန်သွားရန်">
+  <a href="#top" data-s="top"><span class="ni">⬆️</span><span class="nl">အပေါ်</span></a>
+  <a href="#family" data-s="family"><span class="ni">👨‍👩‍👧</span><span class="nl">မိသားစု</span></a>
+  <a href="#docs" data-s="docs"><span class="ni">📄</span><span class="nl">စာရွက်</span></a>
+  <a href="#calc" data-s="calc"><span class="ni">🧮</span><span class="nl">တွက်စက်</span></a>
+  <a href="#forms" data-s="forms"><span class="ni">✍️</span><span class="nl">ဖောင်</span></a>
+  <a href="#warning" data-s="warning"><span class="ni">⚠️</span><span class="nl">သတိ</span></a>
+</nav>
+
+<main class="wrap">
+
+<section id="what">
+  <h2>年末調整 ဆိုတာ ဘာလဲ</h2>
+  <p>ကုမ္ပဏီက လစဉ်လစာထဲကနေ အခွန် (<span class="jp">所得税</span>) ကို ကြိုဖြတ်ထားပါတယ်။ နှစ်ကုန်ရောက်ရင် တစ်နှစ်လုံးအတွက် အခွန်အမှန်ကို ပြန်တွက်ပြီး ပိုဖြတ်ထားရင် ပြန်အမ်းပေးပါတယ်။ မြန်မာက မိသားစုကို ငွေထောက်ပံ့ထားရင် အခွန်သက်သာနိုင်ပါတယ်။</p>
+  <ol class="timeline">
+    <li><b>၁၁လပိုင်း – ၁၂လပိုင်းအစ</b>ကုမ္ပဏီက စာရွက်ပေးမယ်။ ဖြည့်ပြီး စာရွက်စာတမ်းတွေနဲ့ တွဲတင်ပါ။</li>
+    <li><b>၁၂လပိုင်း သို့မဟုတ် ၁လပိုင်း</b>ပြန်ရမယ့်ငွေကို လစာနဲ့အတူ ပေးပါမယ်။</li>
+    <li><b>၁လပိုင်းဝန်းကျင်</b><span class="jp">源泉徴収票</span> ကို ကုမ္ပဏီက ပေးပါမယ်။ ဗီဇာသက်တမ်းတိုးတာ စတာတွေမှာ လိုနိုင်လို့ သေချာသိမ်းထားပါ။</li>
+  </ol>
+</section>
+<section id="summary">
+  <div class="summary">
+    <h2>၁ မိနစ် အတိုချုပ်</h2>
+    <ul>
+      <li><b>လူတိုင်း</b> — ဖောင် ① 扶 နဲ့ ② 基・配・特・所 ကို ဖြည့်ပြီး ကုမ္ပဏီ သတ်မှတ်ရက်မတိုင်ခင် တင်ပါ (အာမခံ ကိုယ်တိုင်ပေးထားရင် ③ 保 ပါ)။</li>
+      <li><b>မြန်မာက မိသားစုကို ငွေလွှဲထားသူ</b> — သန်းခေါင်စာရင်း ဂျပန်ဘာသာပြန် + ငွေလွှဲပြေစာ ထပ်လိုပါတယ်။</li>
+      <li><b>ငွေလွှဲထားတာ မရှိသူ</b> — မိသားစုကွက် ဖြည့်စရာ မလိုပါ။ ဖောင်ကို အမည်၊ လိပ်စာ စတာတွေပဲ ဖြည့်ပါ။</li>
+    </ul>
+  </div>
+</section>
+<section id="family">
+  <h2><span class="step">အဆင့် 1</span>မြန်မာက မိသားစုဝင်ကို ထည့်လို့ရလား</h2>
+  <p class="lead2">မြန်မာက မိသားစုဝင်ကို ထည့်လို့ရမရ အရင်စစ်ပါ။ ရလဒ်ပေါ်မူတည်ပြီး လိုတဲ့ စာရွက် ပြောင်းပါတယ်။</p>
+  <p>အသက်ကို <b>၂၀၂၆ ဒီဇင်ဘာ ၃၁ ရက်</b> အချိန်နဲ့ တွက်ပါတယ်။ မြန်မာမှာနေတဲ့ မိသားစုဝင်ဆိုရင် အသက် ၁၆ နှစ်အထက် ဖြစ်ရပြီး ၂၀၂၆ အတွင်း ငွေလွှဲထားရပါမယ်။</p>
+  <div class="bands">
+    <div class="band ok"><span class="mark">✅</span><b>အသက် ၁၆ – ၂၉</b><span>平9.1.2 – 平23.1.1 (၁၉၉၇.၁.၂ – ၂၀၁၁.၁.၁) မွေး ・ ဘယ်လောက်လွှဲထားထား ရပါတယ်</span></div>
+    <div class="band ok"><span class="mark">✅</span><b>အသက် ၇၀ အထက်</b><span>昭32.1.1 (၁၉၅၇.၁.၁) နဲ့ အရင်မွေး ・ ဘယ်လောက်လွှဲထားထား ရပါတယ်</span></div>
+    <div class="band warn"><span class="mark">⚠️</span><b>အသက် ၃၀ – ၆၉</b><span>昭32.1.2 – 平9.1.1 မွေး ・ ၃၈ သောင်းယန်းနဲ့အထက် လွှဲထားမှ (သို့) နိုင်ငံခြားမှာ ပညာသင်နေမှ (သို့) မသန်စွမ်းသူဖြစ်မှ</span></div>
+    <div class="band ng"><span class="mark">❌</span><b>အသက် ၁၆ အောက်</b><span>平23.1.2 နဲ့ နောက်မွေး ・ <span class="jp">所得税</span> လျှော့ပေါ့ခွင့်မရှိ (住民税 ကွက်မှာတော့ ရေးပါ)</span></div>
+  </div>
+  <p class="note">မြန်မာပြည်တွင်း တက္ကသိုလ်တက်နေတာက “နိုင်ငံခြားမှာ ပညာသင်” ထဲ မပါပါဘူး။ အိမ်ထောင်ဖက်အတွက် အသက်ကန့်သတ်ချက် မရှိပါ။</p>
+
+  <div class="tool">
+    <h3>ကျွန်တော့်/ကျွန်မ မိသားစုဝင်ကို ထည့်လို့ရလား</h3>
+    <div class="field">
+      <label for="rel">တော်စပ်ပုံ</label>
+      <select id="rel"><option value="rel">မိဘ၊ မောင်နှမ၊ သားသမီး စသည်</option><option value="spouse">အိမ်ထောင်ဖက် (ဇနီး/ခင်ပွန်း)</option></select>
+    </div>
+    <div class="field">
+      <label for="dob">မွေးနေ့</label>
+      <input id="dob" type="date" min="1900-01-01" max="2026-12-31">
+    </div>
+    <div class="field">
+      <label for="amt">၂၀၂၆ အတွင်း ဒီလူ့နာမည်နဲ့ တရားဝင်လမ်းကြောင်းကနေ လွှဲထားတဲ့ စုစုပေါင်း (ယန်း)</label>
+      <input id="amt" type="number" inputmode="numeric" min="0" step="1000" placeholder="ဥပမာ 380000">
+    </div>
+    <div class="field">
+      <span class="lbl">ကိုက်ညီတာရှိရင် ✓ ပါ</span>
+      <div class="opts row">
+        <label><input type="checkbox" id="study"> နိုင်ငံခြားမှာ ကျောင်းသားဗီဇာနဲ့ ပညာသင်နေ</label>
+        <label><input type="checkbox" id="dis"> မသန်စွမ်းသူ</label>
+      </div>
+    </div>
+    <button type="button" class="btn" id="checkBtn">စစ်ကြည့်မယ်</button>
+    <div class="result" id="result" aria-live="polite"></div>
+    <p class="note" style="margin:12px 0 0">ဒီစစ်ဆေးချက်က လမ်းညွှန်သက်သက်ပါ။ စာရွက်စာတမ်း ပြည့်စုံမှုပေါ် မူတည်ပြီး ရလဒ် ပြောင်းနိုင်ပါတယ်။</p>
+  </div>
+
+  <h3>သေချာသိထားရမယ့် စည်းမျဉ်း</h3>
+  <ol class="rules">
+    <li><b>လူတစ်ယောက်ချင်းစီရဲ့ နာမည်နဲ့ လွှဲရမယ်။</b> မိခင်နာမည်နဲ့ပဲ လွှဲထားရင် မိခင်တစ်ယောက်ပဲ ရပါမယ်။ ဖခင်ကိုပါ ထည့်ချင်ရင် ဖခင်နာမည်နဲ့ သီးသန့်လွှဲရပါမယ်။</li>
+    <li>၂၀၂၆ ဇန်နဝါရီ ၁ ရက် – ဒီဇင်ဘာ ၃၁ ရက်အတွင်း လွှဲထားတာပဲ တွက်ပါတယ်။ အကြိမ်ကြိမ် လွှဲထားတာကို ပေါင်းလို့ရပါတယ်။</li>
+    <li>သန်းခေါင်စာရင်းထဲမှာ ပါတဲ့ မိသားစုဝင်ပဲ ထည့်လို့ရပါတယ်။</li>
+    <li>မိသားစုဝင်ကိုယ်တိုင် ဝင်ငွေများနေရင် (<span class="jp">所得</span> ၆၂ သောင်းယန်းကျော်ရင်) ထည့်လို့ မရပါ (အသက် ၁၉–၂၂ ဆိုရင် ၁၂၃ သောင်းအထိ <span class="jp">特定親族</span> အဖြစ် ရနိုင်)။</li>
+    <li>ဂျပန်မှာ မောင်နှမ ၂ ယောက်ရှိရင် မိဘတစ်ယောက်တည်းကို ၂ ယောက်လုံး ထည့်လို့ မရပါ။ တစ်ယောက်ပဲ ထည့်ပါ။</li>
+  </ol>
+  <div class="yesno">
+    <div class="y"><b>✅ ရတဲ့ ငွေလွှဲနည်း</b>ဘဏ်လွှဲ၊ SBI Remit၊ KYODAI၊ Seven Bank၊ Western Union စတဲ့ တရားဝင် ငွေလွှဲကုမ္ပဏီ</div>
+    <div class="n"><b>❌ မရတဲ့ ငွေလွှဲနည်း</b>ဟွန်ဒီ၊ သူငယ်ချင်းကတစ်ဆင့်၊ ငွေသားကိုယ်တိုင်ယူသွားတာ</div>
+  </div>
+  <div class="panel" style="margin-top:14px">
+    <p>ငွေလွှဲထားတာ မရှိရင်၊ ဒါမှမဟုတ် စည်းမျဉ်းနဲ့ ကိုက်တဲ့ မိသားစုဝင် မရှိရင် — မိသားစုကွက် ဖြည့်စရာမလိုသလို သန်းခေါင်စာရင်းလည်း မလိုပါဘူး။</p>
+  </div>
+  <a class="nextbtn" href="#docs">နောက်တစ်ဆင့် → 📄 လိုတဲ့ စာရွက်စာတမ်း</a>
+</section>
+<section id="docs">
+  <h2><span class="step">အဆင့် 2</span>လိုအပ်တဲ့ စာရွက်စာတမ်း</h2>
+  <p class="lead2">ကိုယ်နဲ့ ဆိုင်တာကို ✓ ပေးရင် တင်ရမယ့် စာရွက်စာရင်း ထွက်လာပါမယ်။</p>
+  <p>လူတိုင်း လိုတာနဲ့ အခြေအနေအလိုက် လိုတာ ရှိပါတယ်။ ကိုယ်နဲ့ ဆိုင်တာကို ✓ ပါ။ ကိုယ်တင်ရမယ့် စာရင်း ပေါ်လာပါမယ်။</p>
+  <div class="tool">
+    <h3>ကိုယ့်အခြေအနေကို ✓ ပါ</h3>
+    <div class="opts" id="docOpts">
+      <label><input type="checkbox" value="fam"> မြန်မာက မိသားစု (မိဘ၊ မောင်နှမ၊ သားသမီး စသည်) ကို ထည့်ချင်တယ်</label>
+      <label><input type="checkbox" value="r38"> ထည့်ချင်တဲ့သူထဲမှာ အသက် ၃၀–၆၉ ရှိပြီး ၃၈ သောင်းယန်းအထက် လွှဲထားတယ်</label>
+      <label><input type="checkbox" value="study"> အသက် ၃၀–၆၉ မိသားစုဝင်က နိုင်ငံခြားမှာ ကျောင်းသားဗီဇာနဲ့ ပညာသင်နေတယ်</label>
+      <label><input type="checkbox" value="dis"> မသန်စွမ်းတဲ့ မိသားစုဝင် ရှိတယ်</label>
+      <label><input type="checkbox" value="kid"> မြန်မာမှာ အသက် ၁၆ အောက် သားသမီး ရှိတယ်</label>
+      <label><input type="checkbox" value="spMM"> အိမ်ထောင်ဖက် (ဇနီး/ခင်ပွန်း) က မြန်မာမှာ နေတယ်</label>
+      <label><input type="checkbox" value="spJP"> အိမ်ထောင်ဖက်က ဂျပန်မှာ အတူနေတယ်</label>
+      <label><input type="checkbox" value="job"> ၂၀၂၆ အတွင်း အလုပ်ပြောင်းခဲ့တယ်</label>
+      <label><input type="checkbox" value="nenkin"> <span><span class="jp">国民年金</span> ကို ကိုယ်တိုင် ပေးခဲ့တယ်</span></label>
+      <label><input type="checkbox" value="kokuho"> <span><span class="jp">国民健康保険</span> ကို ကိုယ်တိုင် ပေးခဲ့တယ်</span></label>
+      <label><input type="checkbox" value="life"> အသက်အာမခံ (<span class="jp">生命保険</span>) သို့ ငလျင်အာမခံ (<span class="jp">地震保険</span>) ဝင်ထားတယ်</label>
+      <label><input type="checkbox" value="ideco"> <span class="jp">iDeCo</span> ကို ကိုယ်တိုင် ပေးနေတယ်</label>
+      <label><input type="checkbox" value="house"> အိမ်ဝယ်ချေးငွေ (<span class="jp">住宅ローン</span>) နဲ့ အိမ်ဝယ်ထားတယ်</label>
+    </div>
+    <ul class="doclist" id="docList" aria-live="polite"></ul>
+    <p class="note" style="margin:12px 0 0">နိုင်ငံခြားဘာသာ စာရွက်စာတမ်းအားလုံးကို ဂျပန်ဘာသာပြန်နဲ့ တွဲတင်ရပါမယ်။ မူရင်းကို ကိုယ့်ဆီ သိမ်းထားပြီး မိတ္တူကို တင်ပါ (ကုမ္ပဏီက တခြားနည်း ညွှန်ရင် အဲဒီအတိုင်း)။</p>
+  </div>
+  <h3>သန်းခေါင်စာရင်း ဂျပန်ဘာသာပြန် ဘယ်လိုရမလဲ</h3>
+  <ul class="plain">
+    <li>ကိုယ့်လက်ထဲမှာရှိရင် မိတ္တူကူးပြီး တင်ပါ။ မူရင်းကို သိမ်းထားပါ — နောက်နှစ်တွေမှာ ပြန်သုံးရပါမယ်။</li>
+    <li>အိမ်ထောင်ပြုတာ၊ ကလေးမွေးတာ၊ မိသားစုဝင် ဆုံးပါးတာ၊ အိမ်ပြောင်းတာ ရှိရင် အသစ် လိုနိုင်ပါတယ်။</li>
+  </ul>
+  <h3>ငွေလွှဲ အထောက်အထား</h3>
+  <ul class="plain">
+    <li>ပေးပို့သူအမည်၊ လက်ခံသူအမည်၊ ရက်စွဲ၊ ပမာဏ (ယန်း) ပါတဲ့ ပြေစာ သို့မဟုတ် App ထဲက ငွေလွှဲမှတ်တမ်း (screenshot/PDF)။</li>
+    <li>၂၀၂၆ ဇန်နဝါရီ – ဒီဇင်ဘာ အတွင်း လွှဲထားတာ အားလုံး။ နှစ်တိုင်း အသစ်တင်ရပါတယ်။</li>
+  </ul>
+  <a class="nextbtn" href="#calc">နောက်တစ်ဆင့် → 🧮 ဝင်ငွေ တွက်စက်</a>
+</section>
+<section id="calc">
+  <h2><span class="step">အဆင့် 3</span>ဝင်ငွေ တွက်စက် (収入金額・所得金額)</h2>
+  <p class="lead2">လစာ ထည့်လိုက်ရင် ဖောင် ② မှာ ရေးရမယ့် ပမာဏ (A・B・C) ထွက်လာပါမယ်။</p>
+  <p><span class="jp">収入金額</span> ဆိုတာ တစ်နှစ်လုံး ရတဲ့ လစာနဲ့ ဘောနပ်စ် (အခွန်၊ အာမခံ မဖြတ်ခင်) ပါ။ <span class="jp">所得金額</span> ဆိုတာ အခွန်ရုံးရဲ့ <span class="jp">給与所得の計算欄</span> ဇယားအတိုင်း တွက်ထားတဲ့ ပမာဏပါ။</p>
+  <div class="tool">
+    <h3>ကိုယ့်ဝင်ငွေ တွက်ရန်</h3>
+    <div class="field">
+      <label for="cMonthly">လစဉ် <span class="jp">課税支給額</span> (ပျမ်းမျှ၊ ယန်း)</label>
+      <span class="hint">လစာစာရွက် (<span class="jp">給与明細</span>) ထဲက <span class="jp">課税支給額</span>။ မပါရင် <span class="jp">総支給額</span> ထဲက <span class="jp">通勤手当</span> (ခရီးစရိတ်) ကို နုတ်ပါ။</span>
+      <input id="cMonthly" type="number" inputmode="numeric" min="0" step="1000" placeholder="ဥပမာ 230000">
+    </div>
+    <div class="field">
+      <label for="cMonths">၂၀၂၆ အတွင်း ဒီကုမ္ပဏီက လစာရမယ့် လအရေအတွက်</label>
+      <span class="hint">လစာ ထုတ်ပေးတဲ့ရက်နဲ့ တွက်ပါ။ ၁၂လပိုင်းမှာ ထုတ်မယ့် လစာပါ ထည့်ပါ။</span>
+      <select id="cMonths"></select>
+    </div>
+    <div class="field">
+      <label for="cBonus">ဘောနပ်စ် (<span class="jp">賞与</span>) စုစုပေါင်း (ယန်း)</label>
+      <span class="hint">မရှိရင် 0 ထားပါ။</span>
+      <input id="cBonus" type="number" inputmode="numeric" min="0" step="1000" placeholder="0">
+    </div>
+    <div class="field">
+      <label for="cPrev">၂၀၂၆ မှာ အရင်ကုမ္ပဏီက ရခဲ့တဲ့ လစာ (ယန်း)</label>
+      <span class="hint">အလုပ်ပြောင်းခဲ့သူသာ — အရင်ကုမ္ပဏီ <span class="jp">源泉徴収票</span> ရဲ့ <span class="jp">支払金額</span>။</span>
+      <input id="cPrev" type="number" inputmode="numeric" min="0" step="1000" placeholder="0">
+    </div>
+    <div class="calcout" aria-live="polite">
+      <div><span class="k"><span class="badge">A</span><span class="jp">給与の収入金額</span><small>ဖောင် ② ရဲ့ 2 (収入金額)</small></span><span class="v" id="oA">— 円</span></div>
+      <div class="hl"><span class="k"><span class="badge">B</span><span class="jp">給与所得（所得金額）</span><small>ဖောင် ② ရဲ့ 3 နဲ့ 4</small></span><span class="v" id="oB">— 円</span></div>
+      <div><span class="k"><span class="badge">C</span><span class="jp">基礎控除の額</span><small>ဖောင် ② ရဲ့ 7</small></span><span class="v" id="oC">— 円</span></div>
+      <div><span class="k"><span class="jp">区分Ⅰ</span><small>အိမ်ထောင်ဖက် ထည့်မှသာ (ဖောင် ② ရဲ့ 6)</small></span><span class="v" id="oK">—</span></div>
+    </div>
+    <a class="jumpbtn" href="#form-ki">✍️ ဖောင် ② မှာ ဘယ်နေရာ ရေးရမလဲ ကြည့်မယ်</a>
+    <p class="note" style="margin:12px 0 0">ခန့်မှန်းတွက်ချက်မှုသာ ဖြစ်ပါတယ်။ အတိအကျ ပမာဏကို 年末調整 မှာ ကုမ္ပဏီက တွက်ပေးပါမယ်။ လစာကလွဲပြီး တခြားဝင်ငွေ ရှိရင် ကုမ္ပဏီကို မေးပါ။</p>
+  </div>
+
+  <div class="tool">
+    <h3>အိမ်ထောင်ဖက် (သို့) ဂျပန်မှာရှိတဲ့ မိသားစုဝင်ရဲ့ ဝင်ငွေ စစ်ရန်</h3>
+    <div class="field">
+      <label for="sRel">ဘယ်သူလဲ</label>
+      <select id="sRel">
+        <option value="spouse">အိမ်ထောင်ဖက် (အသက် ၇၀ အောက်)</option>
+        <option value="spouse70">အိမ်ထောင်ဖက် (အသက် ၇၀ အထက်)</option>
+        <option value="tokutei">သားသမီး စသည် (အသက် ၁၉–၂၂)</option>
+        <option value="dep">တခြား မိသားစုဝင် (အသက် ၁၆ အထက်)</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="sInc">၂၀၂၆ တစ်နှစ်လုံး လစာ (အခွန်မဖြတ်ခင်၊ ယန်း)</label>
+      <span class="hint">ပါ့တ်တိုင်းမ် အလုပ်လုပ်တာ စသည်။ မရှိရင် 0။ ကိုယ့်ဝင်ငွေကို အပေါ်မှာ ထည့်ထားရင် ပမာဏ ပိုမှန်ပါတယ်။</span>
+      <input id="sInc" type="number" inputmode="numeric" min="0" step="1000" placeholder="ဥပမာ 1000000">
+    </div>
+    <div class="result" id="sOut" aria-live="polite"></div>
+  </div>
+  <a class="nextbtn" href="#forms">နောက်တစ်ဆင့် → ✍️ ဖောင် ဖြည့်နည်း</a>
+</section>
+<section id="forms">
+  <h2><span class="step">အဆင့် 4</span>ဖောင်ဖြည့်နည်း (အခွန်ရုံး တရားဝင် ဖောင်)</h2>
+  <p class="lead2">တရားဝင် ဖောင်ပုံပေါ်က လိမ္မော်ရောင် နံပါတ်ကို နှိပ်ပြီး ဘယ်ကွက်မှာ ဘာရေးရမလဲ ကြည့်ပါ။</p>
+  <p>အောက်က ပုံတွေက အခွန်ရုံး (<span class="jp">国税庁</span>) ရဲ့ <span class="jp">令和8年分</span> တရားဝင် ဖြည့်နမူနာ (<span class="jp">記載例</span>) ပါ။ နမူနာမိသားစုက ဂျပန်လူမျိုး (<span class="jp">山川太郎</span>) ဖြစ်ပြီး အမေရိကမှာနေတဲ့ သား (<span class="jp">山川一郎</span>) လည်း ပါလို့ နိုင်ငံခြားနေ မိသားစုဝင် ဖြည့်နည်းကို ကြည့်လို့ရပါတယ်။ <b>လိမ္မော်ရောင် နံပါတ်ကို နှိပ်ရင်</b> မြန်မာလို ရှင်းလင်းချက် ပေါ်ပါမယ်။</p>
+  <p class="note">“給与の支払者” (ကုမ္ပဏီအမည်၊ လိပ်စာ၊ 法人番号) နဲ့ “所轄税務署長” ကွက်တွေကို ကုမ္ပဏီက ဖြည့်ပေးပါမယ်။</p>
+
+  <h3>① 扶 — 令和8年分 扶養控除等（異動）申告書<span class="who">လူတိုင်း</span></h3>
+  <div class="formfig"><p class="swipe">← ပုံကို ဘေးတိုက် ဆွဲကြည့်ပါ・နံပါတ်ကို နှိပ်ပါ →</p><div class="scroller"><div class="canvas"><img src="img/form_fu8.jpg" loading="lazy" decoding="async" width="1521" height="1071" alt="令和8年分 扶養控除等（異動）申告書 記載例"><button type="button" class="pin" style="left:48.92%;top:6.72%" aria-label="1">1</button><button type="button" class="pin" style="left:69.92%;top:3.08%" aria-label="2">2</button><button type="button" class="pin" style="left:46.55%;top:12.18%" aria-label="3">3</button><button type="button" class="pin" style="left:70.91%;top:9.8%" aria-label="4">4</button><button type="button" class="pin" style="left:46.55%;top:15.69%" aria-label="5">5</button><button type="button" class="pin" style="left:84.42%;top:12.61%" aria-label="6">6</button><button type="button" class="pin" style="left:4.34%;top:28.71%" aria-label="7">7</button><button type="button" class="pin" style="left:4.34%;top:46.22%" aria-label="8">8</button><button type="button" class="pin" style="left:25.25%;top:23.11%" aria-label="9">9</button><button type="button" class="pin" style="left:43.29%;top:23.81%" aria-label="10">10</button><button type="button" class="pin" style="left:50.69%;top:23.53%" aria-label="11">11</button><button type="button" class="pin" style="left:57.59%;top:21.29%" aria-label="12">12</button><button type="button" class="pin" style="left:68.64%;top:25.49%" aria-label="13">13</button><button type="button" class="pin" style="left:71.89%;top:23.11%" aria-label="14">14</button><button type="button" class="pin" style="left:4.34%;top:62.32%" aria-label="15">15</button><button type="button" class="pin" style="left:4.34%;top:86.13%" aria-label="16">16</button></div></div><div class="caption" aria-live="polite">နံပါတ်ကို နှိပ်ရင် ရှင်းလင်းချက် ဒီမှာ ပေါ်ပါမယ်။</div><ol class="callouts"><li><span class="badge">1</span><span class="t"><b>あなたの氏名</b> — ကိုယ့်အမည်။ အပေါ်မှာ ဖူရိဂါနာ (ကာတာကာနာ)၊ အောက်မှာ ဇိုင်ရူးကတ်ပေါ်က စာလုံးပေါင်းအတိုင်း ရေးပါ။</span></li><li><span class="badge">2</span><span class="t"><b>あなたの生年月日</b> — ကိုယ့်မွေးနေ့။ 昭・平 ကို ဝိုင်းပြီး ဂျပန်ခုနှစ်/လ/ရက် ရေးပါ — <a class="inlinejump" href="#era">📅 ခုနှစ်ပြောင်းစက်</a> ကို နှိပ်ပြီး ပြောင်းပါ။</span></li><li><span class="badge">3</span><span class="t"><b>あなたの個人番号</b> — ကိုယ့်မိုင်နံဘာ ၁၂ လုံး။ ကုမ္ပဏီက မရေးနဲ့လို့ ပြောရင် ကွက်လပ်ထားပါ။</span></li><li><span class="badge">4</span><span class="t"><b>世帯主の氏名・あなたとの続柄</b> — ဂျပန်မှာ တစ်ယောက်တည်းနေရင် ကိုယ့်အမည် နဲ့ 本人။</span></li><li><span class="badge">5</span><span class="t"><b>あなたの住所又は居所</b> — စာတိုက်နံပါတ် + ဇိုင်ရူးကတ်ပေါ်က လိပ်စာအပြည့်အစုံ (အခန်းနံပါတ်ပါ)။</span></li><li><span class="badge">6</span><span class="t"><b>配偶者の有無</b> — အိမ်ထောင်ရှိရင် 有၊ မရှိရင် 無 ကို ဝိုင်းပါ။</span></li><li><span class="badge">7</span><span class="t"><b>A 源泉控除対象配偶者</b> — အိမ်ထောင်ဖက်ကို ထောက်ပံ့ထားသူသာ။ အိမ်ထောင်ဖက် မြန်မာမှာနေရင် 非居住者である親族 ကွက်မှာ ○ ပါ။ အိမ်ထောင်ဖက်အတွက် အခွန်လျှော့ဖို့ ဖောင် ② (基・配・特・所) ကိုလည်း ဖြည့်ရပါမယ်။</span></li><li><span class="badge">8</span><span class="t"><b>B 源泉控除対象親族</b> — ငွေလွှဲထားတဲ့ မိသားစုဝင် (အသက် ၁၆ အထက် = ၂၀၁၁.၁.၁ နဲ့ အရင်မွေး) ကို တစ်ကြောင်းကို တစ်ယောက် ရေးပါ။</span></li><li><span class="badge">9</span><span class="t"><b>氏名・続柄・生年月日・個人番号</b> — အမည် (ဖူရိဂါနာပါ)၊ တော်စပ်ပုံ (父 ဖခင်၊ 母 မိခင်၊ 兄 အစ်ကို၊ 姉 အစ်မ၊ 弟 ညီ/မောင်၊ 妹 ညီမ၊ 子 သားသမီး)၊ မွေးနေ့။ မြန်မာမှာနေတဲ့သူမှာ ဂျပန်မိုင်နံဘာ မရှိလို့ 個人番号 ကွက်လပ်ထားပါ။</span></li><li><span class="badge">10</span><span class="t"><b>老人扶養親族・特定扶養親族</b> — အသက် ၇၀ အထက် (昭32.1.1 နဲ့ အရင်မွေး) ဆိုရင် その他 ✓ (မြန်မာမှာ သီးခြားနေလို့)။ အသက် ၁၉–၂၂ (平16.1.2〜平20.1.1 မွေး) ဆိုရင် ဝင်ငွေ ၆၂ သောင်းအောက် → 特定扶養親族၊ ၆၂ သောင်းကျော် ၁၀၀ သောင်းအောက် → 特定親族 ✓။</span></li><li><span class="badge">11</span><span class="t"><b>令和8年中の所得の見積額</b> — ဒီမိသားစုဝင်ရဲ့ ၂၀၂၆ ဝင်ငွေ (所得) ခန့်မှန်း။ နိုင်ငံခြားမှာနေတဲ့ ကလေးရဲ့ နမူနာမှာ 0 လို့ ရေးထားပါတယ်။ ဘယ်လိုရေးရမလဲ မသေချာရင် ကုမ္ပဏီကို မေးပါ။</span></li><li><span class="badge">12</span><span class="t"><b>非居住者である親族</b> — ကိုက်ညီတဲ့ တစ်ခုကို ✓ ပါ: 16歳以上30歳未満又は70歳以上 ／ 留学 (နိုင်ငံခြားမှာ ကျောင်းသားဗီဇာ) ／ 障害者 ／ 38万円以上の支払 (အသက် ၃၀–၆၉ နဲ့ ၃၈ သောင်းအထက်လွှဲထား)။ 特定親族 ဆိုရင် 16歳以上30歳未満又は70歳以上 ကို ✓။</span></li><li><span class="badge">13</span><span class="t"><b>生計を一にする事実</b> — ၂၀၂၆ တစ်နှစ်လုံး ဒီလူ့နာမည်နဲ့ လွှဲထားတဲ့ ငွေစုစုပေါင်း (ယန်း)။ နမူနာမှာ 600,000円။ 年末調整 အချိန်မှာ ဒီကွက်ကို ဖြည့် (သို့) နှစ်ဆန်းကတင်ထားတဲ့ ဖောင်မှာ ထပ်ရေးပြီး ငွေလွှဲပြေစာ တွဲတင်ရပါတယ်။</span></li><li><span class="badge">14</span><span class="t"><b>住所又は居所</b> — မိသားစုဝင်ရဲ့ လိပ်စာ။ ミャンマー နဲ့ မြို့၊ လမ်း စတဲ့ လိပ်စာ (နမူနာမှာ USA လိပ်စာ)။</span></li><li><span class="badge">15</span><span class="t"><b>C 障害者・寡婦・ひとり親・勤労学生</b> — ကိုယ်တိုင် (သို့) မိသားစုဝင် မသန်စွမ်းသူ၊ ကလေးကို တစ်ယောက်တည်း ထိန်းရသူ စသည် ရှိမှ ဖြည့်ပါ။ မရှိရင် ကွက်လပ်။</span></li><li><span class="badge">16</span><span class="t"><b>住民税 — 16歳未満の扶養親族</b> — အသက် ၁၆ အောက် သားသမီး (平23.1.2 နဲ့ နောက်မွေး) ရှိရင် ဒီမှာရေးပါ။ 所得税 လျှော့ပေါ့ခွင့်မရှိပေမယ့် 住民税 အတွက် လိုပါတယ်။ မြန်မာမှာနေရင် 控除対象外国外扶養親族 ကို ○ ပါ (မြို့နယ်ရုံးကို စာရွက်တင်ရနိုင်လို့ ကုမ္ပဏီကို မေးပါ)။</span></li></ol></div>
+
+  <h3 id="form-ki">② 基・配・特・所 — 基礎控除申告書 兼 配偶者控除等申告書 …<span class="who">လူတိုင်း</span></h3>
+  <div class="formfig"><p class="swipe">← ပုံကို ဘေးတိုက် ဆွဲကြည့်ပါ・နံပါတ်ကို နှိပ်ပါ →</p><div class="scroller"><div class="canvas"><img src="img/form_ki.jpg" loading="lazy" decoding="async" width="1770" height="1320" alt="令和8年分 基礎控除申告書 兼 配偶者控除等申告書 記載例"><button type="button" class="pin" style="left:47.71%;top:5.34%" aria-label="1">1</button><button type="button" class="pin" style="left:11.95%;top:24.2%" aria-label="2">2</button><button type="button" class="pin" style="left:24.15%;top:25.0%" aria-label="3">3</button><button type="button" class="pin" style="left:21.19%;top:33.18%" aria-label="4">4</button><button type="button" class="pin" style="left:3.47%;top:40.57%" aria-label="5">5</button><button type="button" class="pin" style="left:25.0%;top:38.3%" aria-label="6">6</button><button type="button" class="pin" style="left:25.0%;top:46.59%" aria-label="7">7</button><button type="button" class="pin" style="left:37.46%;top:18.52%" aria-label="8">8</button><button type="button" class="pin" style="left:2.12%;top:63.07%" aria-label="9">9</button><button type="button" class="pin" style="left:2.12%;top:84.66%" aria-label="10">10</button></div></div><div class="caption" aria-live="polite">နံပါတ်ကို နှိပ်ရင် ရှင်းလင်းချက် ဒီမှာ ပေါ်ပါမယ်။</div><ol class="callouts"><li><span class="badge">1</span><span class="t"><b>あなたの氏名・住所</b> — လူတိုင်း ဖြည့်ရပါမယ်။</span></li><li><span class="badge">2</span><span class="t"><b>収入金額</b> — ၂၀၂၆ တစ်နှစ်လုံး ရမယ့် လစာ + ဘောနပ်စ် (အခွန်မဖြတ်ခင်)။ <a class="inlinejump" href="#calc">🧮 တွက်စက်</a> ရဲ့ A ကို ရေးပါ။</span></li><li><span class="badge">3</span><span class="t"><b>所得金額</b> — <a class="inlinejump" href="#calc">🧮 တွက်စက်</a> ရဲ့ B ကို ရေးပါ။</span></li><li><span class="badge">4</span><span class="t"><b>合計所得金額の見積額</b> — လစာကလွဲပြီး တခြားဝင်ငွေ မရှိရင် 3 နဲ့ အတူတူပါ။</span></li><li><span class="badge">5</span><span class="t"><b>控除額の計算（判定）</b> — 4 ရဲ့ ပမာဏ ပါဝင်တဲ့ အတန်းကို ✓ ပါ။ ၄၈၉ သောင်းအောက်ဆိုရင် အပေါ်ဆုံးအတန်း (104万円)။</span></li><li><span class="badge">6</span><span class="t"><b>区分Ⅰ</b> — အိမ်ထောင်ဖက်အတွက် လျှော့ချင်သူသာ A／B／C ရေးပါ (၉၀၀ သောင်းအောက်ဆိုရင် A)။ မဟုတ်ရင် ကွက်လပ်။</span></li><li><span class="badge">7</span><span class="t"><b>基礎控除の額</b> — ✓ ထားတဲ့ အတန်းရဲ့ ပမာဏ (ဥပမာ 1,040,000)။ ကုမ္ပဏီက ဖြည့်ပေးတာလည်း ရှိပါတယ်။</span></li><li><span class="badge">8</span><span class="t"><b>配偶者控除等申告書</b> — အိမ်ထောင်ဖက်ကို ထောက်ပံ့ထားသူသာ။ အိမ်ထောင်ဖက် မြန်မာမှာနေရင် 非居住者である配偶者 မှာ ○ ပြီး 生計を一にする事実 မှာ ငွေလွှဲစုစုပေါင်း ရေးပါ။ အိမ်ထောင်ဖက်ရဲ့ ဝင်ငွေနဲ့ 判定 ကို ✓ ပြီး 控除額の計算 ဇယားကနေ ပမာဏ ရှာပါ (တွက်စက်မှာ စစ်လို့ရ)။</span></li><li><span class="badge">9</span><span class="t"><b>特定親族特別控除申告書</b> — အသက် ၁၉–၂၂ (平16.1.2〜平20.1.1 မွေး) မိသားစုဝင်ရဲ့ ဝင်ငွေ ၆၂ သောင်းကျော် ၁၂၃ သောင်းအောက် ဖြစ်မှ။ နိုင်ငံခြားမှာနေရင် 非居住者である特定親族 ○ + ငွေလွှဲပမာဏ။ များသောအားဖြင့် မလိုပါ။</span></li><li><span class="badge">10</span><span class="t"><b>所得金額調整控除申告書</b> — လစာ ၈၅၀ သောင်းကျော်သူသာ။ များသောအားဖြင့် မလိုပါ။</span></li></ol></div>
+
+  <h3>③ 保 — 保険料控除申告書<span class="who">ကိုယ်တိုင်ပေးထားတဲ့ အာမခံ ရှိသူ</span></h3>
+  <p class="note">အာမခံ ဘာမှမရှိရင် ဒီဖောင်ကို မတင်ရတဲ့ ကုမ္ပဏီရှိသလို အမည်/လိပ်စာ ဖြည့်ပြီး တင်ခိုင်းတဲ့ ကုမ္ပဏီလည်း ရှိပါတယ်။</p>
+  <div class="formfig"><p class="swipe">← ပုံကို ဘေးတိုက် ဆွဲကြည့်ပါ・နံပါတ်ကို နှိပ်ပါ →</p><div class="scroller"><div class="canvas"><img src="img/form_ho.jpg" loading="lazy" decoding="async" width="1383" height="997" alt="令和8年分 保険料控除申告書 記載例"><button type="button" class="pin" style="left:55.1%;top:6.32%" aria-label="1">1</button><button type="button" class="pin" style="left:2.82%;top:19.85%" aria-label="2">2</button><button type="button" class="pin" style="left:56.94%;top:21.05%" aria-label="3">3</button><button type="button" class="pin" style="left:57.27%;top:58.95%" aria-label="4">4</button><button type="button" class="pin" style="left:57.27%;top:75.19%" aria-label="5">5</button></div></div><div class="caption" aria-live="polite">နံပါတ်ကို နှိပ်ရင် ရှင်းလင်းချက် ဒီမှာ ပေါ်ပါမယ်။</div><ol class="callouts"><li><span class="badge">1</span><span class="t"><b>あなたの氏名・住所</b> — အမည်နဲ့ လိပ်စာ။</span></li><li><span class="badge">2</span><span class="t"><b>生命保険料控除</b> — အသက်အာမခံ ကိုယ်တိုင် ဝင်ထားသူသာ။ အာမခံကုမ္ပဏီက ပို့ပေးတဲ့ 控除証明書 ကြည့်ပြီး ကူးရေးကာ မူရင်းကို တွဲတင်ပါ။</span></li><li><span class="badge">3</span><span class="t"><b>地震保険料控除</b> — ငလျင်အာမခံ ဝင်ထားသူသာ။ 控除証明書 တွဲတင်ပါ။</span></li><li><span class="badge">4</span><span class="t"><b>社会保険料控除</b> — ၂၀၂၆ မှာ ကိုယ်တိုင် ပေးခဲ့တဲ့ 国民年金・国民健康保険 (ဥပမာ အလုပ်မဝင်ခင်ကာလ)။ လစာထဲက ဖြတ်ထားတာကို မရေးပါနဲ့။ 国民年金 ဆိုရင် 控除証明書 တွဲတင်ရပါမယ်။</span></li><li><span class="badge">5</span><span class="t"><b>小規模企業共済等掛金控除</b> — iDeCo ကို ကိုယ်တိုင်ပေးထားသူသာ။ 払込証明書 တွဲတင်ပါ။</span></li></ol></div>
+
+  <h3>④ 扶 — 令和9年分 扶養控除等（異動）申告書<span class="who">ကုမ္ပဏီက ပေးရင်</span></h3>
+  <p>နောက်နှစ် (၂၀၂၇) အတွက် ဖောင်ကို တစ်ခါတည်း ဖြည့်ခိုင်းတတ်ပါတယ်။ ဖြည့်နည်း ① နဲ့ အတူတူ — ကွာတာ ၃ ချက်ပဲ ရှိပါတယ်။</p>
+  <div class="formfig"><p class="swipe">← ပုံကို ဘေးတိုက် ဆွဲကြည့်ပါ・နံပါတ်ကို နှိပ်ပါ →</p><div class="scroller"><div class="canvas"><img src="img/form_fu9.jpg" loading="lazy" decoding="async" width="1563" height="1143" alt="令和9年分 扶養控除等（異動）申告書 記載例"><button type="button" class="pin" style="left:46.07%;top:5.25%" aria-label="1">1</button><button type="button" class="pin" style="left:2.88%;top:39.37%" aria-label="2">2</button><button type="button" class="pin" style="left:68.14%;top:31.5%" aria-label="3">3</button><button type="button" class="pin" style="left:42.23%;top:22.97%" aria-label="4">4</button></div></div><div class="caption" aria-live="polite">နံပါတ်ကို နှိပ်ရင် ရှင်းလင်းချက် ဒီမှာ ပေါ်ပါမယ်။</div><ol class="callouts"><li><span class="badge">1</span><span class="t"><b>အပေါ်ပိုင်း</b> — 令和8年分 နဲ့ အတူတူ ဖြည့်ပါ။</span></li><li><span class="badge">2</span><span class="t"><b>ခုနှစ်ကန့်သတ်ချက် ၁ နှစ် ရွှေ့</b> — B: 平24.1.1 နဲ့ အရင်မွေး။ နိုင်ငံခြားနေ အသက် ၁၆–၂၉: 平10.1.2〜平24.1.1၊ ၃၀–၆၉: 昭33.1.2〜平10.1.1၊ ၇၀ အထက်: 昭33.1.1 နဲ့ အရင်။</span></li><li><span class="badge">3</span><span class="t"><b>生計を一にする事実 ကို အခု ကွက်လပ်ထား</b> — ၂၀၂၇ အတွင်း လွှဲမယ့်ငွေကို ၂၀၂၇ နှစ်ကုန် 年末調整 ကျမှ ရေးပါ (နမူနာမှာလည်း ကွက်လပ်)။</span></li><li><span class="badge">4</span><span class="t"><b>老人・特定</b> — 老人扶養親族: 昭33.1.1 နဲ့ အရင်မွေး။ 特定扶養親族・特定親族: 平17.1.2〜平21.1.1 မွေး။</span></li></ol></div>
+
+  <div class="panel" id="era">
+    <h3 style="margin-top:0">📅 ခရစ်နှစ် → ဂျပန်ခုနှစ် ပြောင်းရန်</h3>
+    <div class="era">
+      <input id="eraIn" type="number" inputmode="numeric" min="1926" max="2026" placeholder="ဥပမာ 1960" aria-label="ခရစ်နှစ်">
+      <output id="eraOut" for="eraIn" aria-live="polite"></output>
+    </div>
+    <p class="note" style="margin-top:10px"><span class="jp">昭和</span> = ခရစ်နှစ် − ၁၉၂၅ ／ <span class="jp">平成</span> = ခရစ်နှစ် − ၁၉၈၈ ／ <span class="jp">令和</span> = ခရစ်နှစ် − ၂၀၁၈ (၁၉၈၉ နဲ့ ၂၀၁၉ က လပေါ် မူတည်ပါတယ်)</p>
+  </div>
+  <a class="nextbtn" href="#warning">နောက်ဆုံး → ⚠️ သတိပေးချက်</a>
+</section>
+<section id="changes">
+  <h2>ဒီနှစ် (၂၀၂၆) ပြောင်းလဲချက်</h2>
+  <ul class="changes">
+    <li><b>基礎控除 တိုးလာ</b>ကိုယ့်ဝင်ငွေ (<span class="jp">所得</span>) ၄၈၉ သောင်းယန်းအောက်ဆိုရင် ၁၀၄ သောင်းယန်း။ အလုပ်သမား အများစု ဒီထဲမှာ ပါပါတယ်။</li>
+    <li><b>မိသားစုဝင်ရဲ့ ဝင်ငွေကန့်သတ်ချက် ၆၂ သောင်း</b>မိသားစုဝင်ရဲ့ <span class="jp">所得</span> ၆၂ သောင်းယန်းအောက် (လစာသက်သက်ဆိုရင် တစ်နှစ် ၁၃၆ သောင်းယန်းအောက်) ဆိုရင် ထည့်လို့ရပါတယ်။</li>
+    <li><b>လစာရသူ နုတ်ပေးငွေ (<span class="jp">給与所得控除</span>) အနည်းဆုံး ၇၄ သောင်း</b>လစာ တစ်နှစ် ၇၄ သောင်းယန်းအောက်ဆိုရင် <span class="jp">所得</span> က 0 ပါ။</li>
+    <li><b>အသက် ၁၉–၂၂ မိသားစုဝင်အတွက် <span class="jp">特定親族特別控除</span></b>သူ့ဝင်ငွေ ၆၂ သောင်းကျော် ၁၂၃ သောင်းအောက်ဆိုရင် အများဆုံး ၆၃ သောင်းယန်း လျှော့ပေါ့ခွင့်ရပါတယ်။</li>
+    <li><b>ပြောင်းလဲမှုကြောင့် အသစ်ထည့်လို့ရလာရင်</b>扶 ဖောင်ရဲ့ <span class="jp">異動月日及び事由</span> ကွက်မှာ 「令和8年12月1日　改正」 လို့ရေးပြီး ပြန်တင်ရပါတယ်။</li>
+  </ul>
+</section>
+<section id="warning">
+  <h2>အရေးကြီး သတိပေးချက်</h2>
+  <ul class="plain">
+    <li><b>မမှန်တဲ့အချက်အလက် မရေးပါနဲ့။</b> နောက်ပိုင်း အခွန်ရုံးက စစ်ဆေးရင် အခွန်ပြန်ဆောင်ရုံသာမက ဒဏ်ကြေးပါ ပေးရနိုင်ပါတယ်။ အခွန်ပြဿနာက 特定技能 ဗီဇာသက်တမ်းတိုးရာမှာ ထိခိုက်နိုင်ပါတယ်။</li>
+    <li><b>၂၀၂၆ အတွင်း အလုပ်ပြောင်းခဲ့ရင်</b> အရင်ကုမ္ပဏီရဲ့ <span class="jp">源泉徴収票</span> ကို အခုကုမ္ပဏီကို တင်ပါ။ မရှိရင် အရင်ကုမ္ပဏီဆီ တောင်းပါ။</li>
+    <li><b>ရက်မမီရင် / မေ့သွားရင်</b> ၂၀၂၇ ဖေဖော်ဝါရီ ၁၆ – မတ် ၁၅ ရက်အတွင်း ကိုယ်တိုင် <span class="jp">確定申告</span> လုပ်ပြီး အခွန်ပြန်တောင်းလို့ ရပါတယ်။</li>
+    <li>မိသားစုဝင်ကို ထည့်ထားရင် နောက်နှစ် <span class="jp">住民税</span> လည်း လျော့နိုင်ပါတယ်။</li>
+  </ul>
+</section>
+
+
+
+<footer>
+  <p>ဒီစာမျက်နှာက ၂၀၂၆ ခုနှစ် (<span class="jp">令和8年分</span>) 年末調整 အတွက် အကျဉ်းချုပ်လမ်းညွှန်ပါ။ အသေးစိတ်နဲ့ နောက်ဆုံးဆုံးဖြတ်ချက်အတွက် ကုမ္ပဏီနဲ့ အခွန်ရုံး ညွှန်ကြားချက်ကို လိုက်နာပါ။</p>
+  <p class="jp">出典：国税庁「令和8年分 年末調整のしかた」各種申告書の記載例（ミャンマー語の説明・番号は ST AGENCY JAPAN が追加）</p>
+  <p>တရားဝင် ဖောင်ဒေါင်းလုဒ်: <a class="jp" href="https://www.nta.go.jp/users/gensen/nencho/shinkokusyo/index.htm" target="_blank" rel="noopener">国税庁「年末調整で提出する申告書」</a></p>
+  <p>© ST AGENCY JAPAN ・ ၂၀၂၆ နိုဝင်ဘာ</p>
+</footer>
+</main>
+
+<script>
+(function(){
+  var MY=['၀','၁','၂','၃','၄','၅','၆','၇','၈','၉'];
+  function my(n){return String(n).replace(/\d/g,function(d){return MY[d];});}
+  function fmt(n){return Math.round(n).toLocaleString('en-US');}
+  function num(id){var v=parseInt(document.getElementById(id).value,10);return isNaN(v)||v<0?0:v;}
+
+  /* 給与所得の計算欄（国税庁 令和8年分 記載例どおり） */
+  function kyuyoShotoku(A){
+    if(A<741000) return 0;
+    if(A<=2190999) return A-740000;
+    if(A<=2192999) return 1451000;
+    if(A<=2195999) return 1453000;
+    if(A<=2199999) return 1456000;
+    var B=Math.floor(A/4/1000)*1000;
+    if(A<=3599999) return B*2.8-80000;
+    if(A<=6599999) return B*3.2-440000;
+    if(A<=8499999) return Math.floor(A*0.9-1100000);
+    return A-1950000;
+  }
+  function kiso(S){ if(S<=4890000)return 1040000; if(S<=6550000)return 670000; if(S<=23500000)return 620000; if(S<=24000000)return 480000; if(S<=24500000)return 320000; if(S<=25000000)return 160000; return 0; }
+  function kubun1(S){ if(S<=9000000)return 'A'; if(S<=9500000)return 'B'; if(S<=10000000)return 'C'; return ''; }
+
+
+  /* side nav active state */
+  var navLinks=document.querySelectorAll('.sidenav a');
+  var ids=['top','family','docs','calc','forms','warning'];
+  function spy(){
+    var y=window.innerHeight*0.35, cur='top';
+    ids.forEach(function(id){ var el=document.getElementById(id); if(el && el.getBoundingClientRect().top<=y) cur=id; });
+    if(cur==='forms'||cur==='calc'||cur==='docs'||cur==='family'||cur==='warning'||cur==='contact'||cur==='top'){}
+    navLinks.forEach(function(a){ a.classList.toggle('active', a.getAttribute('data-s')===cur); });
+  }
+  window.addEventListener('scroll',spy,{passive:true}); spy();
+
+  /* form figures: pins */
+  document.querySelectorAll('.formfig').forEach(function(fig){
+    var pins=fig.querySelectorAll('.pin'), items=fig.querySelectorAll('ol.callouts li'), cap=fig.querySelector('.caption');
+    function act(i,scrollPin){
+      pins.forEach(function(p,j){p.classList.toggle('on',j===i);});
+      items.forEach(function(li,j){li.classList.toggle('on',j===i);});
+      cap.innerHTML='<span class="badge">'+(i+1)+'</span> '+items[i].querySelector('.t').innerHTML;
+      if(scrollPin){ var sc=fig.querySelector('.scroller'), p=pins[i]; sc.scrollLeft=Math.max(0,p.offsetLeft-sc.clientWidth/2); }
+    }
+    pins.forEach(function(p,i){p.addEventListener('click',function(){act(i,false);});});
+    items.forEach(function(li,i){li.addEventListener('click',function(){act(i,true); fig.querySelector('.scroller').scrollIntoView({block:'nearest',behavior:'smooth'});});});
+  });
+
+  /* era converter */
+  var eraIn=document.getElementById('eraIn'), eraOut=document.getElementById('eraOut');
+  eraIn.addEventListener('input',function(){
+    var y=parseInt(eraIn.value,10);
+    if(!y||y<1926||y>2026){eraOut.textContent='';return;}
+    var p=[];
+    if(y<=1989)p.push('昭和'+(y-1925));
+    if(y>=1989&&y<=2019)p.push('平成'+(y===1989?'元':(y-1988)));
+    if(y>=2019)p.push('令和'+(y===2019?'元':(y-2018)));
+    eraOut.textContent=p.join(' ／ ');
+  });
+
+  /* documents */
+  var DOCS={
+    base:[
+      ['給与所得者の扶養控除等（異動）申告書','ကုမ္ပဏီက ပေးမယ်။ 令和8年分 (ကုမ္ပဏီက ညွှန်ရင် 令和9年分 ပါ)။',''],
+      ['基礎控除申告書 兼 配偶者控除等申告書 …','ကုမ္ပဏီက ပေးမယ်။ အမည်နဲ့ လိပ်စာ လူတိုင်း ဖြည့်ရမယ်။',''],
+      ['保険料控除申告書','ကုမ္ပဏီက ပေးမယ်။ ကိုယ်တိုင်ပေးထားတဲ့ အာမခံ မရှိရင် ကုမ္ပဏီ ညွှန်ကြားချက်အတိုင်း။',''],
+      ['マイナンバー（個人番号）','ကိုယ့်နံပါတ် ၁၂ လုံး ရေးဖို့။ マイナンバーカード သို့ 通知カード။','']
+    ],
+    fam:[
+      ['親族関係書類','သန်းခေါင်စာရင်း (အိမ်ထောင်စုစာရင်း) မိတ္တူ + ဂျပန်ဘာသာပြန်။ (မိသားစုဝင်ရဲ့ အမည်၊ မွေးနေ့၊ လိပ်စာ ပါရမယ်)','မြန်မာက အေဂျင်စီ / ကိုယ့်မိသားစု'],
+      ['送金関係書類','မိသားစုဝင် တစ်ယောက်ချင်းစီ နာမည်နဲ့ ၂၀၂၆ အတွင်း လွှဲထားတဲ့ ပြေစာ အားလုံး။','ဘဏ် / ငွေလွှဲကုမ္ပဏီ App']
+    ],
+    r38:[['38万円送金書類','အသက် ၃၀–၆၉ မိသားစုဝင်ကို ၂၀၂၆ အတွင်း ၃၈ သောင်းယန်းအထက် လွှဲထားကြောင်း ပြေစာ (ဒီလူ့နာမည်နဲ့)။','ဘဏ် / ငွေလွှဲကုမ္ပဏီ App']],
+    study:[['留学ビザ等書類','နိုင်ငံခြားအစိုးရ ထုတ်ပေးတဲ့ ကျောင်းသားဗီဇာ (သို့) နေထိုင်ခွင့်ကတ် မိတ္တူ + ဂျပန်ဘာသာပြန်။','ပညာသင်နေတဲ့ မိသားစုဝင်']],
+    dis:[['障害者であることを示す書類','မသန်စွမ်းကြောင်း အထောက်အထား + ဂျပန်ဘာသာပြန်။ ဘာလိုလဲ ကုမ္ပဏီကို အရင်မေးပါ။','']],
+    kid:[['住民税欄（16歳未満）の記入','扶 ဖောင်ရဲ့ 住民税 ကွက်မှာ ရေးပြီး 控除対象外国外扶養親族 ○။ 親族関係書類・送金関係書類 ကို ၂၀၂၇ မတ် ၁၅ မတိုင်ခင် မြို့နယ်ရုံးကို တင်ရနိုင်ပါတယ်။','ကုမ္ပဏီ / မြို့နယ်ရုံးကို မေးပါ']],
+    spMM:[
+      ['婚姻証明書（親族関係書類）','လက်ထပ်စာချုပ် / အိမ်ထောင်ဖက်ဖြစ်ကြောင်း စာရွက် + ဂျပန်ဘာသာပြန်။ (扶 ဖောင်နဲ့ တင်ပြီးသားဆိုရင် ထပ်မလို)','မြန်မာ'],
+      ['送金関係書類（配偶者あて）','အိမ်ထောင်ဖက် နာမည်နဲ့ ၂၀၂၆ အတွင်း လွှဲထားတဲ့ ပြေစာ။','ဘဏ် / ငွေလွှဲကုမ္ပဏီ App']
+    ],
+    spJP:[['配偶者の収入がわかるもの','အိမ်ထောင်ဖက်ရဲ့ ၂၀၂၆ လစာစာရွက် (給与明細) သို့ 源泉徴収票။ အိမ်ထောင်ဖက်ရဲ့ မိုင်နံဘာလည်း လိုနိုင်ပါတယ်။','အိမ်ထောင်ဖက်ရဲ့ အလုပ်']],
+    job:[['前の会社の源泉徴収票（令和8年分）','၂၀၂၆ မှာ အရင်ကုမ္ပဏီက ပေးခဲ့တဲ့ လစာအတွက်။ မရှိရင် 年末調整 မလုပ်ပေးနိုင်လို့ 確定申告 လုပ်ရပါမယ်။','အရင်ကုမ္ပဏီဆီ တောင်းပါ']],
+    nenkin:[['社会保険料（国民年金保険料）控除証明書','国民年金 ကိုယ်တိုင်ပေးခဲ့ရင် တွဲတင်ရမယ်။ ၁၁လပိုင်းဝန်းကျင် စာတိုက်က ရောက်လာမယ်။','日本年金機構']],
+    kokuho:[['国民健康保険（税）の領収書・納付証明書','ကိုယ်တိုင်ပေးခဲ့တဲ့ ပမာဏ သိဖို့။ ကုမ္ပဏီက တောင်းရင် တွဲတင်ပါ။','မြို့နယ်ရုံး (市区町村役所)']],
+    life:[['生命保険料控除証明書・地震保険料控除証明書','မူရင်းကို တွဲတင်ရမယ်။ ၁၀–၁၁လပိုင်းလောက် ပို့ပေးမယ်။','အာမခံကုမ္ပဏီ']],
+    ideco:[['小規模企業共済等掛金払込証明書','iDeCo ကို ကိုယ်တိုင်ပေးနေရင် (လစာထဲက ဖြတ်တာမဟုတ်ရင်)။','国民年金基金連合会']],
+    house:[['住宅借入金等特別控除申告書・借入金の年末残高証明書','ဒုတိယနှစ်ကစ 年末調整 မှာ တင်လို့ရမယ်။ ပထမနှစ်က 確定申告 လုပ်ရပါတယ်။','အခွန်ရုံး / ဘဏ်']]
+  };
+  var docOpts=document.getElementById('docOpts'), docList=document.getElementById('docList');
+  function esc(s){return s.replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+  function renderDocs(){
+    var html='', seen={};
+    function add(k,cls){ if(seen[k])return; seen[k]=1; DOCS[k].forEach(function(d){ html+='<li class="'+cls+'"><span class="nm">'+esc(d[0])+'</span>'+esc(d[1])+(d[2]?'<span class="from">ရယူရာ: '+esc(d[2])+'</span>':'')+'</li>'; }); }
+    add('base','');
+    docOpts.querySelectorAll('input:checked').forEach(function(c){
+      var k=c.value;
+      if(k==='r38'||k==='study'||k==='dis') add('fam','opt');
+      add(k,'opt');
+    });
+    docList.innerHTML=html;
+  }
+  docOpts.addEventListener('change',renderDocs); renderDocs();
+
+  /* income calculator */
+  var sel=document.getElementById('cMonths'); var ownS=null;
+  for(var i=12;i>=1;i--){var o=document.createElement('option');o.value=i;o.textContent=my(i)+' လ';sel.appendChild(o);}
+  function calc(){
+    var A=num('cMonthly')*parseInt(sel.value,10)+num('cBonus')+num('cPrev');
+    var ids=['oA','oB','oC','oK'];
+    if(!A){ ids.forEach(function(id){document.getElementById(id).textContent=id==='oK'?'—':'— 円';}); ownS=null; sCheck(); return; }
+    var B=kyuyoShotoku(A); ownS=B;
+    document.getElementById('oA').textContent=fmt(A)+' 円';
+    document.getElementById('oB').textContent=fmt(B)+' 円';
+    document.getElementById('oC').textContent=fmt(kiso(B))+' 円';
+    document.getElementById('oK').textContent=kubun1(B)||'—';
+    sCheck();
+  }
+  ['cMonthly','cBonus','cPrev'].forEach(function(id){document.getElementById(id).addEventListener('input',calc);});
+  sel.addEventListener('change',calc);
+
+  /* spouse / relative in Japan */
+  var SP={A:[48,38,38,36,31,26,21,16,11,6,3],B:[32,26,26,24,21,18,14,11,8,4,2],C:[16,13,13,12,11,9,7,6,4,2,1]};
+  var SPB=[950000,1000000,1050000,1100000,1150000,1200000,1250000,1300000,1330000];
+  var TK=[[850000,63],[900000,61],[950000,51],[1000000,41],[1050000,31],[1100000,21],[1150000,11],[1200000,6],[1230000,3]];
+  var sOut=document.getElementById('sOut');
+  function sCheck(){
+    var raw=document.getElementById('sInc').value;
+    if(raw===''){sOut.className='result';return;}
+    var inc=num('sInc'), s=kyuyoShotoku(inc), rel=document.getElementById('sRel').value;
+    var items=['収入 '+fmt(inc)+' 円 → 所得 '+fmt(s)+' 円'], ok=false, head='';
+    if(rel==='spouse'||rel==='spouse70'){
+      var k=ownS===null?'A':kubun1(ownS);
+      if(ownS!==null&&!k){ head='ကိုယ့်ဝင်ငွေ ၁,၀၀၀ သောင်းကျော်လို့ 配偶者控除 မရပါ'; }
+      else if(s<=620000){ ok=true; var col=rel==='spouse70'?0:1; head='配偶者控除 '+SP[k][col]+'万円 ('+(rel==='spouse70'?'区分Ⅱ ①':'区分Ⅱ ②')+')'; }
+      else if(s<=1330000){ ok=true; var idx; if(s<=950000)idx=2; else {idx=3; for(var j=0;j<SPB.length;j++){ if(s<=SPB[j]){idx=2+j;break;} } } head='配偶者特別控除 '+SP[k][idx]+'万円 (区分Ⅱ '+(s<=950000?'③':'④')+')'; }
+      else head='အိမ်ထောင်ဖက်ရဲ့ ဝင်ငွေ များလို့ မရပါ';
+      if(ok){ items.push('ဖောင် ② ရဲ့ 配偶者 ကွက်မှာ ဖြည့်ပါ။'); items.push(ownS===null?'ကိုယ့်ဝင်ငွေ မထည့်ရသေးလို့ 区分Ⅰ = A နဲ့ တွက်ထားပါတယ်။':'区分Ⅰ = '+k); }
+    } else if(rel==='tokutei'){
+      if(s<=620000){ ok=true; head='特定扶養親族 (扶 ဖောင်)'; items.push('扶 ဖောင်ရဲ့ B ကွက်မှာ ရေးပြီး 特定扶養親族 ✓။'); }
+      else if(s<=1230000){ ok=true; var amt=3; for(var t=0;t<TK.length;t++){ if(s<=TK[t][0]){amt=TK[t][1];break;} } head='特定親族特別控除 '+amt+'万円'; items.push('ဖောင် ② ရဲ့ 特定親族 ကွက်မှာ ဖြည့်ပါ။'); }
+      else head='ဝင်ငွေ များလို့ ထည့်လို့ မရပါ';
+    } else {
+      if(s<=620000){ ok=true; head='ထည့်လို့ရနိုင်ပါတယ် (扶養親族)'; items.push('扶 ဖောင်ရဲ့ B ကွက်မှာ ရေးပါ။'); }
+      else head='ဝင်ငွေ ၆၂ သောင်းကျော်လို့ ထည့်လို့ မရပါ';
+    }
+    sOut.className='result show '+(ok?'ok':'ng');
+    sOut.innerHTML='<div class="head">'+(ok?'✅ ':'❌ ')+head+'</div><ul>'+items.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul>';
+  }
+  document.getElementById('sInc').addEventListener('input',sCheck);
+  document.getElementById('sRel').addEventListener('change',sCheck);
+
+  /* overseas family eligibility */
+  var out=document.getElementById('result');
+  function show(ok,head,items){ out.className='result show '+(ok?'ok':'ng'); out.innerHTML='<div class="head">'+(ok?'✅ ':'❌ ')+head+'</div>'+(items.length?'<ul>'+items.map(function(i){return '<li>'+i+'</li>';}).join('')+'</ul>':'')+(ok?'<a class="jumpbtn" href="#docs">📄 လိုတဲ့ စာရွက်စာတမ်း စစ်မယ်</a>':''); }
+  document.getElementById('checkBtn').addEventListener('click',function(){
+    var rel=document.getElementById('rel').value, dob=document.getElementById('dob').value;
+    var amt=num('amt'), study=document.getElementById('study').checked, dis=document.getElementById('dis').checked;
+    var docs='親族関係書類 (သန်းခေါင်စာရင်း + ဂျပန်ဘာသာပြန်) နဲ့ 送金関係書類 (ငွေလွှဲပြေစာ) တင်ရပါမယ်။';
+    if(!dob){show(false,'မွေးနေ့ ထည့်ပါ',[]);return;}
+    var p=dob.split('-'),y=+p[0],m=+p[1],d=+p[2];
+    var age=2026-y+((m===1&&d===1)?1:0);
+    if(age<0){show(false,'မွေးနေ့ ပြန်စစ်ပါ',[]);return;}
+    if(rel==='spouse'){
+      if(amt<=0){show(false,'ငွေလွှဲထားတာ မရှိရင် ထည့်လို့ မရပါ',['အိမ်ထောင်ဖက် နာမည်နဲ့ လွှဲထားတဲ့ ပြေစာ လိုပါတယ်။']);return;}
+      show(true,'ထည့်လို့ရနိုင်ပါတယ် (အိမ်ထောင်ဖက်)',['ဖောင် ② ရဲ့ 配偶者 ကွက်: 非居住者である配偶者 ○၊ 生計を一にする事実 = '+fmt(amt)+' 円။','婚姻証明書 (ဂျပန်ဘာသာပြန်ပါ) နဲ့ ငွေလွှဲပြေစာ တင်ရပါမယ်။']);return;
+    }
+    if(age<16){show(false,'အသက် '+my(age)+' နှစ် — ၁၆ နှစ်အောက်ဖြစ်လို့ 所得税 မှာ ထည့်လို့ မရပါ',['扶 ဖောင်ရဲ့ 住民税 (16歳未満) ကွက်မှာ ရေးပြီး 控除対象外国外扶養親族 ○ ပါ။']);return;}
+    if(amt<=0){show(false,'ငွေလွှဲထားတာ မရှိရင် ထည့်လို့ မရပါ',['၂၀၂၆ အတွင်း ဒီလူ့နာမည်နဲ့ တရားဝင်လမ်းကြောင်းကနေ လွှဲထားတဲ့ ပြေစာ လိုပါတယ်။']);return;}
+    var label='အသက် '+my(age)+' နှစ်';
+    var extra=(age>=19&&age<=22)?'အသက် ၁၉–၂၂ ဖြစ်လို့ 特定扶養親族 ✓ (၆၃ သောင်း လျှော့ပေါ့)။':(age>=70?'အသက် ၇၀ အထက်ဖြစ်လို့ 老人扶養親族 の その他 ✓။':'');
+    if(age<30||age>=70){ var it=['非居住者 ကွက်မှာ「16歳以上30歳未満又は70歳以上」✓ ၊ 生計を一にする事実 = '+fmt(amt)+' 円။',docs]; if(extra)it.unshift(extra); show(true,label+' — ထည့်လို့ရပါတယ်',it); return; }
+    if(study||dis){ show(true,label+' — ထည့်လို့ရပါတယ်',['非居住者 ကွက်မှာ「'+(study?'留学':'障害者')+'」✓ ၊ 生計を一にする事実 = '+fmt(amt)+' 円။', study?'留学ビザ等書類 (ဂျပန်ဘာသာပြန်ပါ) လည်း လိုပါတယ်။':'မသန်စွမ်းကြောင်း စာရွက်စာတမ်း ကုမ္ပဏီကို မေးပါ။', docs]); return; }
+    if(amt>=380000){ show(true,label+' — ၃၈ သောင်းယန်းပြည့်လို့ ထည့်လို့ရပါတယ်',['非居住者 ကွက်မှာ「38万円以上の支払」✓ ၊ 生計を一にする事実 = '+fmt(amt)+' 円။','親族関係書類 နဲ့ 38万円送金書類 (ငွေလွှဲပြေစာ) တင်ရပါမယ်။']); return; }
+    show(false,label+' — ၃၈ သောင်းယန်း မပြည့်သေးပါ',['လွှဲထားတာ '+fmt(amt)+' ယန်း ・ လိုနေတာ '+fmt(380000-amt)+' ယန်း','အသက် ၃၀–၆၉ ဆိုရင် ၂၀၂၆ တစ်နှစ်အတွင်း ဒီလူ့နာမည်နဲ့ ၃၈ သောင်းယန်းနဲ့အထက် ဖြစ်ရပါမယ်။']);
+  });
+})();
+</script>
+</body>
+</html>
